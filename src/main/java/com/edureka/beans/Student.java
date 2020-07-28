@@ -37,6 +37,10 @@ public class Student {
 	public void setPlace(String place) {
 		this.place = place;
 	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", place=" + place + ", hostel=" + hostel + "]";
+	}
 	
 
 }
