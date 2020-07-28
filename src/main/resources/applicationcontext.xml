@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="student" class="com.edureka.beans.Student"
+		autowire="constructor">
+		<constructor-arg value="serin"></constructor-arg>
+		<constructor-arg value="vypin"></constructor-arg>
+		
+		
+		
+		<!-- <property name="name" value="merin"></property>
+		<property name="place" value="vypin"></property> -->
+	</bean>
+
+	<beans>
+		<bean id="hostel" class="com.edureka.beans.Hostel">
+			<property name="hname" value="mbc"></property>
+			<property name="wing" value="kuttikanam"></property>
+		</bean>
+		<bean id="hostel1" class="com.edureka.beans.Hostel">
+			<property name="hname" value="mbc"></property>
+			<property name="wing" value="kuttikanam"></property>
+		</bean>
+	</beans>
+</beans>

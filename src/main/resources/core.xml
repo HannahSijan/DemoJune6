@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+
+	
+	<context:component-scan base-package="com.edureka"></context:component-scan>
+	<bean id="car" class="com.edureka.beans.Car"></bean>
+	<bean id="person" class="com.edureka.beans.Person"></bean>
+	<bean id="car1" class="com.edureka.beans.Car">
+			<property name="model" value="#{'acura'.toUpperCase()}"></property>
+			<property name="price" value="45000$"></property>
+	</bean>
+
+</beans>
